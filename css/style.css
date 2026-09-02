@@ -19,17 +19,7 @@
   --font-body: "Archivo", "Helvetica Neue", Arial, sans-serif;
   --font-mono: "JetBrains Mono", "SFMono-Regular", Consolas, monospace;
 
-  color-scheme: light dark;
-}
-@media (prefers-color-scheme: dark){
-  :root:not([data-theme="light"]){
-    --paper: #000000; --paper-raised: #1A1A1A; --ink: #FFFFFF;
-    --muted: #999999; --line: #333333; --accent: #FFFFFF; --accent-ink: #000000;
-  }
-}
-:root[data-theme="dark"]{
-  --paper: #000000; --paper-raised: #1A1A1A; --ink: #FFFFFF;
-  --muted: #999999; --line: #333333; --accent: #FFFFFF; --accent-ink: #000000;
+  color-scheme: light;
 }
 *{box-sizing:border-box;}
 html{scroll-behavior:smooth;}
@@ -87,6 +77,7 @@ section{ padding:76px 0; scroll-margin-top:84px; }
   position:absolute; top:8px; left:8px; z-index:2; font-family:var(--font-mono); font-size:9.5px;
   letter-spacing:.08em; text-transform:uppercase; background:var(--paper); color:var(--muted); padding:3px 6px; border:1px solid var(--line);
 }
+.thumb img{ position:absolute; inset:0; width:100%; height:100%; object-fit:cover; }
 .thumb .sector{
   position:absolute; bottom:8px; left:8px; z-index:2; font-family:var(--font-mono); font-size:10px;
   letter-spacing:.1em; text-transform:uppercase; color:#fff; mix-blend-mode:difference;
