@@ -1,19 +1,19 @@
 
 /* ============ TOKENS ============ */
 :root{
-  --paper: #EFF1EC;
-  --paper-raised: #E5E8E0;
-  --ink: #101114;
-  --muted: #5B5F55;
-  --line: #CBCFC2;
-  --accent: #2451FF;
+  --paper: #FFFFFF;
+  --paper-raised: #F0F0F0;
+  --ink: #000000;
+  --muted: #666666;
+  --line: #DDDDDD;
+  --accent: #000000;
   --accent-ink: #FFFFFF;
 
-  --footer-bg: #101114;
-  --footer-fg: #EFF1EC;
-  --footer-muted: #9B9F94;
-  --footer-line: #2B2D28;
-  --footer-accent: #6E8AFF;
+  --footer-bg: #000000;
+  --footer-fg: #FFFFFF;
+  --footer-muted: #999999;
+  --footer-line: #333333;
+  --footer-accent: #FFFFFF;
 
   --font-display: "Archivo", "Helvetica Neue", Arial, sans-serif;
   --font-body: "Archivo", "Helvetica Neue", Arial, sans-serif;
@@ -23,13 +23,13 @@
 }
 @media (prefers-color-scheme: dark){
   :root:not([data-theme="light"]){
-    --paper: #0E0F10; --paper-raised: #17181A; --ink: #EDEDE9;
-    --muted: #9A9E92; --line: #2A2C27; --accent: #6E8AFF; --accent-ink: #0E0F10;
+    --paper: #000000; --paper-raised: #1A1A1A; --ink: #FFFFFF;
+    --muted: #999999; --line: #333333; --accent: #FFFFFF; --accent-ink: #000000;
   }
 }
 :root[data-theme="dark"]{
-  --paper: #0E0F10; --paper-raised: #17181A; --ink: #EDEDE9;
-  --muted: #9A9E92; --line: #2A2C27; --accent: #6E8AFF; --accent-ink: #0E0F10;
+  --paper: #000000; --paper-raised: #1A1A1A; --ink: #FFFFFF;
+  --muted: #999999; --line: #333333; --accent: #FFFFFF; --accent-ink: #000000;
 }
 *{box-sizing:border-box;}
 html{scroll-behavior:smooth;}
@@ -91,10 +91,10 @@ section{ padding:76px 0; scroll-margin-top:84px; }
   position:absolute; bottom:8px; left:8px; z-index:2; font-family:var(--font-mono); font-size:10px;
   letter-spacing:.1em; text-transform:uppercase; color:#fff; mix-blend-mode:difference;
 }
-.thumb-canopy{ background: repeating-radial-gradient(circle at 30% 70%, transparent 0 10px, rgba(16,17,20,.14) 10px 11px), linear-gradient(160deg,#B9C4A6,#748265 60%,#3E4636); }
-.thumb-meridian{ background: repeating-linear-gradient(0deg, rgba(16,17,20,.16) 0 1px, transparent 1px 26px), repeating-linear-gradient(90deg, rgba(16,17,20,.16) 0 1px, transparent 1px 26px), linear-gradient(135deg,#D7DAE6,#9AA3C4 55%,#4C5586); }
-.thumb-meridian::after{ content:""; position:absolute; inset:0; background:linear-gradient(115deg, transparent 46%, #2451FF 47%, #2451FF 49%, transparent 50%); opacity:.55; }
-.thumb-folio{ background:linear-gradient(90deg, #E2C9A0 0 12%, #C99A6B 12% 27%, #7A5240 27% 34%, #D8B7C9 34% 47%, #8E6C8B 47% 58%, #47506B 58% 74%, #202433 74% 100%); }
+.thumb-canopy{ background: repeating-radial-gradient(circle at 30% 70%, transparent 0 10px, rgba(0,0,0,.16) 10px 11px), linear-gradient(160deg,#DADADA,#8C8C8C 60%,#3A3A3A); }
+.thumb-meridian{ background: repeating-linear-gradient(0deg, rgba(0,0,0,.18) 0 1px, transparent 1px 26px), repeating-linear-gradient(90deg, rgba(0,0,0,.18) 0 1px, transparent 1px 26px), linear-gradient(135deg,#E2E2E2,#AFAFAF 55%,#4D4D4D); }
+.thumb-meridian::after{ content:""; position:absolute; inset:0; background:linear-gradient(115deg, transparent 46%, #000000 47%, #000000 49%, transparent 50%); opacity:.5; }
+.thumb-folio{ background:linear-gradient(90deg, #D2D2D2 0 12%, #B6B6B6 12% 27%, #8A8A8A 27% 34%, #DCDCDC 34% 47%, #9E9E9E 47% 58%, #5C5C5C 58% 74%, #262626 74% 100%); }
 
 .chip{ font-family:var(--font-mono); font-size:10.5px; text-transform:uppercase; letter-spacing:.06em; border:1px solid var(--line); padding:4px 8px; color:var(--muted); }
 
@@ -203,7 +203,7 @@ footer.contact{ background:var(--footer-bg); color:var(--footer-fg); padding:96p
 .contact-secondary{ margin-top:18px; }
 
 .status-card{ border:1px solid var(--line); padding:22px 24px; display:flex; align-items:flex-start; gap:14px; }
-.status-dot{ width:9px; height:9px; border-radius:50%; background:#3E8E5A; margin-top:6px; flex:none; box-shadow:0 0 0 3px color-mix(in srgb, #3E8E5A 22%, transparent); }
+.status-dot{ width:9px; height:9px; border-radius:50%; background:var(--ink); margin-top:6px; flex:none; box-shadow:0 0 0 3px color-mix(in srgb, var(--ink) 18%, transparent); }
 .status-card p{ font-size:14.5px; margin:0; color:var(--ink); }
 .status-label{ font-family:var(--font-mono); font-size:10.5px; text-transform:uppercase; letter-spacing:.1em; color:var(--muted); display:block; margin-bottom:6px; }
 
